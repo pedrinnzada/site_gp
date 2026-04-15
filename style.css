@@ -452,6 +452,66 @@ h2::after {
     border-bottom-color: var(--accent-red);
 }
 
+/* Business Info Styles */
+.business-info {
+    background: rgba(255, 0, 0, 0.02);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+    transition: var(--transition-smooth);
+}
+
+.business-info:hover {
+    background: rgba(255, 0, 0, 0.05);
+    border-color: var(--accent-red);
+    box-shadow: 0 15px 40px rgba(255, 0, 0, 0.2), var(--shadow-red-neon);
+    transform: translateY(-5px);
+}
+
+.business-info h3 {
+    color: var(--accent-red);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.business-info p {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.business-info ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.business-info li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition-smooth);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.business-info li:hover {
+    background: var(--red-gradient);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: var(--shadow-red-neon);
+}
+
 /* Reveal */
 .reveal {
     opacity: 1;
